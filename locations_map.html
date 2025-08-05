@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f7aa1d9b48f9ed8bc40e32d8aa60d534 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f7aa1d9b48f9ed8bc40e32d8aa60d534" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f7aa1d9b48f9ed8bc40e32d8aa60d534 = L.map(
+                "map_f7aa1d9b48f9ed8bc40e32d8aa60d534",
+                {
+                    center: [37.86848926190477, -121.39091485714286],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ab87824175c8dd701676164952be7b78 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ab87824175c8dd701676164952be7b78.addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            var circle_9044d2e24d498f3ef88cca022ee6a8a1 = L.circle(
+                [39.530895, -119.814972],
+                {"bubblingMouseEvents": true, "color": "#20B2AA", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#20B2AA", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 321868.0, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_9044d2e24d498f3ef88cca022ee6a8a1.bindTooltip(
+                `<div>
+                     200 mile radius around Reno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d2028ac50b64832d375bffde485d0a4 = L.circleMarker(
+                [40.575321, -122.312755],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_9d2028ac50b64832d375bffde485d0a4.bindTooltip(
+                `<div>
+                     City of Redding
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_232804f299c2c1a4156f3d8eda61def1 = L.circleMarker(
+                [39.530399, -119.798538],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_232804f299c2c1a4156f3d8eda61def1.bindTooltip(
+                `<div>
+                     WM Reno
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4adfcec6a33491eb73bbecdbf0c05ad = L.circleMarker(
+                [39.291556, -120.214043],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_a4adfcec6a33491eb73bbecdbf0c05ad.bindTooltip(
+                `<div>
+                     Eastern Material Recovery Facility
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37fc1fb92d379b67e23d625fcdebe91a = L.circleMarker(
+                [39.167189, -121.554325],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_37fc1fb92d379b67e23d625fcdebe91a.bindTooltip(
+                `<div>
+                     Recology Marysville CA MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec3123c76d3a539b06aa69dd7c79e09a = L.circleMarker(
+                [38.918083, -120.001875],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_ec3123c76d3a539b06aa69dd7c79e09a.bindTooltip(
+                `<div>
+                     South Tahoe Refuse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e3235d7e6672298b2e5dd17748f07e3e = L.circleMarker(
+                [38.83728, -121.34816],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_e3235d7e6672298b2e5dd17748f07e3e.bindTooltip(
+                `<div>
+                     FCC - Western Placer WMA MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11516b837204cf3ae3fa618bcb7706a9 = L.circleMarker(
+                [38.69901, -120.81544],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_11516b837204cf3ae3fa618bcb7706a9.bindTooltip(
+                `<div>
+                     Waste Connections - El Dorado MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88706bc7b15f8a73ca607c845627f643 = L.circleMarker(
+                [38.651466, -121.385051],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_88706bc7b15f8a73ca607c845627f643.bindTooltip(
+                `<div>
+                     Republic Services - N. Highlands CA 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05a305657a69b29cf5e231797098b32c = L.circleMarker(
+                [38.526622, -121.394015],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_05a305657a69b29cf5e231797098b32c.bindTooltip(
+                `<div>
+                     WM SRT Sacramento
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd007090f75e4516f2fe73e06de64f61 = L.circleMarker(
+                [38.471733, -122.439448],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_fd007090f75e4516f2fe73e06de64f61.bindTooltip(
+                `<div>
+                     Upper Valley Disposal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_16d5012041188c63e5fe6fded1c55819 = L.circleMarker(
+                [38.392425, -122.722637],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_16d5012041188c63e5fe6fded1c55819.bindTooltip(
+                `<div>
+                     Recology Sonoma Marin 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85079c36d8af579da04d3fc0f370578c = L.circleMarker(
+                [38.270321, -121.311911],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_85079c36d8af579da04d3fc0f370578c.bindTooltip(
+                `<div>
+                     California Waste Recovery Systems (Cal Waste)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae0fadbdcb3e1ab6e92e9e59e2250f9f = L.circleMarker(
+                [38.2097, -122.264417],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_ae0fadbdcb3e1ab6e92e9e59e2250f9f.bindTooltip(
+                `<div>
+                     Napa Recycling
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d8a7b36432c4365b8dd02616eb7d5c3c = L.circleMarker(
+                [38.145104, -121.252435],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_d8a7b36432c4365b8dd02616eb7d5c3c.bindTooltip(
+                `<div>
+                     WM Lodi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_afc3aabb49dc5978b8b86bb8957d8d0a = L.circleMarker(
+                [38.144339, -122.25286],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_afc3aabb49dc5978b8b86bb8957d8d0a.bindTooltip(
+                `<div>
+                     Recology Vallejo CA MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f0b808bc447e9f65ac95edff4a8e7c4 = L.circleMarker(
+                [38.018928, -121.85804],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_6f0b808bc447e9f65ac95edff4a8e7c4.bindTooltip(
+                `<div>
+                     Mount Diablo Recycling
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_faea7a65eee13955afe8774bb4c99474 = L.circleMarker(
+                [37.973316, -121.268576],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_faea7a65eee13955afe8774bb4c99474.bindTooltip(
+                `<div>
+                     GreenWaste Stockton MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f9ccc6c9a2856f5f8035e493a7e0ac3 = L.circleMarker(
+                [37.96277, -122.36805],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_2f9ccc6c9a2856f5f8035e493a7e0ac3.bindTooltip(
+                `<div>
+                     Republic Services - Richmond/West Contra Costa County - IRRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3698b155ad4e03f52bf03567ef3cce9 = L.circleMarker(
+                [37.954107, -122.505605],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_d3698b155ad4e03f52bf03567ef3cce9.bindTooltip(
+                `<div>
+                     Marin Recycling Center (MRC)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44747f6456b8115a28586cc26bbddf3d = L.circleMarker(
+                [37.87902, -122.305171],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_44747f6456b8115a28586cc26bbddf3d.bindTooltip(
+                `<div>
+                     Berkeley Recycling Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf8a57c3cec3c5ed7e93bf4b156484b7 = L.circleMarker(
+                [37.811599, -122.301802],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_bf8a57c3cec3c5ed7e93bf4b156484b7.bindTooltip(
+                `<div>
+                     California Waste Solutions - Oakland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d832af7f58db2d595d81f0fd1508248f = L.circleMarker(
+                [37.741336, -122.375786],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_d832af7f58db2d595d81f0fd1508248f.bindTooltip(
+                `<div>
+                     Recology Pier 96 SF MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_242f126e3a9c61dcaed834622f67ac4a = L.circleMarker(
+                [37.712365, -122.193843],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_242f126e3a9c61dcaed834622f67ac4a.bindTooltip(
+                `<div>
+                     WM San Leandro (Davis St)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_707ae61586cbe99cd952fd6b7d493489 = L.circleMarker(
+                [37.709847, -122.15144],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_707ae61586cbe99cd952fd6b7d493489.bindTooltip(
+                `<div>
+                     Alameda County Industries
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b54a74678a248d663c399637f608876c = L.circleMarker(
+                [37.676104, -121.418296],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_b54a74678a248d663c399637f608876c.bindTooltip(
+                `<div>
+                     Tracy MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c335b63a28212933df2f6198fc944f2c = L.circleMarker(
+                [37.648679, -122.381722],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_c335b63a28212933df2f6198fc944f2c.bindTooltip(
+                `<div>
+                     Blue Line Transfer & MRF (South City Scavengers)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d690064656d740794f8a0574e9d65cf = L.circleMarker(
+                [37.62296, -120.92939],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_7d690064656d740794f8a0574e9d65cf.bindTooltip(
+                `<div>
+                     Gilton Resource Recovery MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e02b1c1bb8becc0e80b144e9cc74ef9 = L.circleMarker(
+                [37.596531, -122.034105],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_3e02b1c1bb8becc0e80b144e9cc74ef9.bindTooltip(
+                `<div>
+                     Tri-Ced Community Recycling
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e8ddd73f63a702cb52254706f1263eb = L.circleMarker(
+                [37.517609, -122.258533],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_8e8ddd73f63a702cb52254706f1263eb.bindTooltip(
+                `<div>
+                     ReThinkWaste/South Bayside Recycling MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ccd62edde145480d2a5e266b04f6713 = L.circleMarker(
+                [37.508812, -121.990301],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_6ccd62edde145480d2a5e266b04f6713.bindTooltip(
+                `<div>
+                     Burrtec Fremont MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b80842a822c9777d066def86624eeb9 = L.circleMarker(
+                [37.453954, -121.929449],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_7b80842a822c9777d066def86624eeb9.bindTooltip(
+                `<div>
+                     Republic Services - Newby Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f8d17e65b560b54e9b3eb4c8aae2322 = L.circleMarker(
+                [37.419369, -122.016869],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_4f8d17e65b560b54e9b3eb4c8aae2322.bindTooltip(
+                `<div>
+                     Sunnyvale SMART Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3be2940336a2b64d472a29ab6a2a7d80 = L.circleMarker(
+                [37.365918, -121.895717],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_3be2940336a2b64d472a29ab6a2a7d80.bindTooltip(
+                `<div>
+                     GreenWaste San Jose MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4f8e628bb1c7956dc864127071a82660 = L.circleMarker(
+                [37.365119, -121.879817],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_4f8e628bb1c7956dc864127071a82660.bindTooltip(
+                `<div>
+                     California Waste Solutions - San Jose
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_323710aa6ba82103149bb12ac174b660 = L.circleMarker(
+                [36.972871, -122.105098],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_323710aa6ba82103149bb12ac174b660.bindTooltip(
+                `<div>
+                     City of Santa Cruz MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d74dfddbc4802da8612aa40db416118 = L.circleMarker(
+                [36.713961, -121.767714],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_3d74dfddbc4802da8612aa40db416118.bindTooltip(
+                `<div>
+                     ReGen Monterey Regional SWMD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b40a0e43f33406f2ab425f33aeb8641 = L.circleMarker(
+                [36.702193, -119.789325],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_0b40a0e43f33406f2ab425f33aeb8641.bindTooltip(
+                `<div>
+                     Mid Valley Disposal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e9f7470e4d6b09a9bd4e4aa0c6c27f3f = L.circleMarker(
+                [36.685498, -119.756748],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_e9f7470e4d6b09a9bd4e4aa0c6c27f3f.bindTooltip(
+                `<div>
+                     Cedar Avenue Recycling and Transfer Station (CARTS)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a3c8f6266f2131f5773dd56d2de1c8f = L.circleMarker(
+                [36.582966, -121.825383],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_4a3c8f6266f2131f5773dd56d2de1c8f.bindTooltip(
+                `<div>
+                     Monterey City Disposal & MRF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb7e0967770bacefe2b6cf2a806a30fc = L.circleMarker(
+                [36.531372, -119.30244],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_fb7e0967770bacefe2b6cf2a806a30fc.bindTooltip(
+                `<div>
+                     Pena's Disposal
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7785f2e58118b19aed3d9b4fc8a5935a = L.circleMarker(
+                [36.302738, -119.597455],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_7785f2e58118b19aed3d9b4fc8a5935a.bindTooltip(
+                `<div>
+                     Kings Waste and Recycling Authority (Kwra)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1adeacd07dfd499767dc67f92a5346c3 = L.circleMarker(
+                [36.216059, -115.143839],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_f7aa1d9b48f9ed8bc40e32d8aa60d534);
+        
+    
+            circle_marker_1adeacd07dfd499767dc67f92a5346c3.bindTooltip(
+                `<div>
+                     Republic Services - Las Vegas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
